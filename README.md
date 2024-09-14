@@ -1,7 +1,7 @@
 # CamHoundAD
 
 <a href="https://github.com/pxcs/CamHoundAD/"><p align="center">
-<img width="1100" height="400" src="/screenshots/cctv.jpg">
+<img src="/screenshots/cctv.jpg">
 </p></a>
 
 This is a tool meant to assist **Cyber Security** researchers on discovering outdated and vulnerable camera systems on the internet by utilizing [shodan.io](shodan.io). I was able to discover thousands of vulnerable cameras using it. It could be for Cammera Attacks research, CCTV's Attacks research, etc.
