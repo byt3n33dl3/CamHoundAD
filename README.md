@@ -1,14 +1,20 @@
 # CamHoundAD
 
-![cctv](https://github.com/user-attachments/assets/77412cf9-3215-4b49-9840-b8850dd3e468)
+<a href="https://github.com/pxcs/CamHoundAD/"><p align="center">
+<img width="1100" height="400" src="/screenshots/cctv.jpg">
+</p></a>
 
-This is a tool meant to assist **Cyber Security** researchers on discovering outdated and vulnerable camera systems on the internet by utilizing shodan.io. I was able to discover thousands of vulnerable cameras using it. It could be for Cammera Attacks research, CCTV's Attacks research, etc.
+This is a tool meant to assist **Cyber Security** researchers on discovering outdated and vulnerable camera systems on the internet by utilizing [shodan.io](shodan.io). I was able to discover thousands of vulnerable cameras using it. It could be for Cammera Attacks research, CCTV's Attacks research, etc.
 
 # Vendors Affected
 
 >- [+] Hikvision
 
+>- [+] Nikon
+
 >- [+] Avtech
+
+>- [+] GoPro
 
 >- [+] TVT
 
@@ -84,4 +90,4 @@ This tool is purely educational and is inteded to make the internet more secure.
 
 [[+] RCE](https://github.com/k1p0d/h264_dvr_rce)
 
-[[+] CVE-2022-46169](https://github.com/sAsPeCt488/CVE-2022-46169)
+[[+] CVE](https://github.com/sAsPeCt488/CVE-2022-46169)
