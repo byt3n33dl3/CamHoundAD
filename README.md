@@ -1,57 +1,52 @@
-## Internet Camera Exploitation Tool
+# CamHoundAD
 
-This is a tool meant to assist cyber security researchers on discovering outdated and vulnerable camera systems on the internet by utilizing shodan.io
+![cctv](https://github.com/user-attachments/assets/77412cf9-3215-4b49-9840-b8850dd3e468)
 
-I was able to discover thousands of vulnerable cameras using it
+This is a tool meant to assist **Cyber Security** researchers on discovering outdated and vulnerable camera systems on the internet by utilizing shodan.io. I was able to discover thousands of vulnerable cameras using it. It could be for Cammera Attacks research, CCTV's Attacks research, etc.
 
-![](/screenshots/Screenshot_20221216_015844.png)
+# Vendors Affected
 
-![](/screenshots/Screenshot_20221216_021346.png)
+>- [+] Hikvision
 
-![](/screenshots/Screenshot_20221216_023903.png)
+>- [+] Avtech
 
-## Vendors Affected
+>- [+] TVT
 
-[+] Hikvision
+>- [+] Cacti
 
-[+] Avtech
+Coming Soon . . .
 
-[+] TVT
-
-[+] Cacti
-
-more to come...
-
-## Features
+# Features
 
 - Fetching of hosts from shodan.io
+   - [Attacks Key](shodan.io)
 - Check for vulnerable cameras
-- Automatically run commands on exploited devices (Only Hikvision for now)
-- Automatically grab camera credentials (Only for Avtech)
+- Automatically run commands on exploited Devices
+- Automatically grab camera credentials
 - Multi-threading for faster scanning
 - Usage of Socks5 proxies for anonymity
 - Storing results in Sqlite3 database
 - Logging all actions in log files 
 
-## Prerequisites
+# Prerequisites
 
 To use this tool you need to have the following:
-- Shodan API key (Membership required for more than 1 page)
+- Shodan API Key
 - Socks5 authenticated proxies
 
-## Installation
+# Installation
 
-```
-git clone https://github.com/TasosY2K/camera-exploit-tool
+```python
+git clone https://github.com/pxcs/CamHoundAD
 pip install -r requirements.txt
 python3 scanner.py --help
 ```
 
-## Usage
+# Usage
 
-##### Collect hosts in database
+## Collect hosts in database
 
-```
+```python
 # Collect Hikvision hosts
 python3 scanner.py --shodan --api-token <shodan_token> --query 'product:"Hikvision IP Camera"' --pages 1
 
@@ -65,31 +60,28 @@ python3 scanner.py --shodan --api-token <shodan_token> --query 'product:"Cross W
 python3 scanner.py --shodan --api-token <shodan_token> --query 'Login to Cacti' --pages 1
 ```
 
-##### Check hosts for exploit
+## Check hosts for exploit
 
-```
+```python
 python3 scanner.py --check --proxy-file proxies.txt --threads 20
 ```
 
-##### Automatically run command on exploited hosts
+## Automatically run command on exploited hosts
 
-```
+```python
 python3 scanner.py --autopwn --proxy-file proxies.txt --payload "id"
 ```
 
-## About this tool
+# About CamHoundAD
 
-This tool is purely educational and is inteded to make the internet more secure
-
-**I will not be responsible for any direct or indirect damage caused due to the usage of this tool, it is for educational purposes only.**
-
-Any PR's or suggestions on improving this project are welcome
+This tool is purely educational and is inteded to make the internet more secure. **I will not be responsible for any direct or indirect damage caused due to the usage of this tool, it is for educational purposes only.** Any PR's or suggestions on improving this project are welcome
 
 ## Exploits Used
-[https://www.exploit-db.com/exploits/40500](https://www.exploit-db.com/exploits/40500)
 
-2021-36260 [https://www.exploit-db.com/exploits/50441](https://www.exploit-db.com/exploits/50441)
+[[+] Exploit-db](https://www.exploit-db.com/exploits/40500)
 
-[https://github.com/k1p0d/h264_dvr_rce](https://github.com/k1p0d/h264_dvr_rce)
+[[+] Exploit-db](https://www.exploit-db.com/exploits/50441)
 
-CVE-2022-46169 [https://github.com/sAsPeCt488/CVE-2022-46169](https://github.com/sAsPeCt488/CVE-2022-46169)
+[[+] RCE](https://github.com/k1p0d/h264_dvr_rce)
+
+[[+] CVE-2022-46169](https://github.com/sAsPeCt488/CVE-2022-46169)
