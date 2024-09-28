@@ -1,6 +1,6 @@
 # CamHoundAD
 
-<a href="https://github.com/pxcs/CamHoundAD/"><p align="center">
+<a href="https://github.com/byt3n33dl3/CamHoundAD/"><p align="center">
 <img src="/screenshots/cctv.jpg">
 </p></a>
 
@@ -43,7 +43,7 @@ To use this tool you need to have the following:
 # Installation
 
 ```python
-git clone https://github.com/pxcs/CamHoundAD
+git clone https://github.com/byt3n33dl3/CamHoundAD
 pip install -r requirements.txt
 python3 scanner.py --help
 ```
