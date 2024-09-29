@@ -4,7 +4,7 @@
 <img src="/screenshots/cctv.jpg">
 </p></a>
 
-This is a tool meant to assist **Cyber Security** researchers on discovering outdated and vulnerable camera systems on the internet by utilizing [shodan.io](shodan.io). I was able to discover thousands of vulnerable cameras using it. It could be for Cammera Attacks research, CCTV's Attacks research, etc.
+This is a tool meant to assist `Cyber Security` researchers on Discovering outdated and Vulnerable camera systems on the internet by utilizing [shodan.io](shodan.io). I was able to discover thousands of vulnerable cameras using it. It could be for Cammera Attacks research, CCTV's Attacks research, etc.
 
 # Vendors Affected
 
